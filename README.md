@@ -153,6 +153,10 @@ listStyle = {
 
 string. Classname which will be applied to each item in the dropdown list. The default is `country`
 
+#### limitLength
+
+integer. Limits the size of the number that will be inserted. The default is `infinite`
+
 ## How to use it
 
 * If you install it from `npm install`, you can just do `var ReactTelephoneInput = require('react-telephone-input');`
