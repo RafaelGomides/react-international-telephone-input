@@ -153,7 +153,7 @@ listStyle = {
 
 string. Classname which will be applied to each item in the dropdown list. The default is `country`
 
-#### limitLength
+#### numberLength
 
 integer. Limits the size of the number that will be inserted. The default is `infinite`
 
