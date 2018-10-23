@@ -19,7 +19,7 @@ function handleInputChange(telNumber, selectedCountry) {
 }
 
 // Use declaratively within another react components render method
-var ReactTelInput = require('react-telephone-input');
+var ReactTelInput = require('react-international-telephone-input');
 // var ReactTelInput = require('react-telephone-input/lib/withStyles'), if you need the styles
 
 <MyAwesomeReactComponent>
@@ -32,12 +32,13 @@ var ReactTelInput = require('react-telephone-input');
 </MyAwesomeReactComponent>
 
 // or render standalone
-var ReactTelInput = require('react-telephone-input');
+var ReactTelInput = require('react-international-telephone-input');
 React.render(<ReactTelInput
                 defaultCountry="in"
                 flagsImagePath='/path/to/images/flags.png'
-                onChange={handleInputChange}/>
+                onChange={handleInputChange}
                 onBlur={handleInputBlur}
+              />
                 document.getElementById('my-container'));
 ```
 
@@ -155,11 +156,11 @@ string. Classname which will be applied to each item in the dropdown list. The d
 
 #### numberLength
 
-integer. Limits the size of the number that will be inserted. The default is `infinite`
+integer. Limits the size of the number that will be inserted. The default is `null`
 
 ## How to use it
 
-* If you install it from `npm install`, you can just do `var ReactTelephoneInput = require('react-telephone-input');`
+* If you install it from `npm install`, you can just do `var ReactTelephoneInput = require('react-insternational-telephone-input');`
 * You will need to copy flags.png from example/src folder to see the flag icons for each country.
 * Set the path to the flags image using the prop `flagsImagePath`
 
@@ -205,7 +206,7 @@ $ npm start
 go to your browser and type `http://localhost:3000`
 ```
 
-[build-badge]: https://img.shields.io/travis/mukeshsoni/react-telephone-input/master.png?style=flat-square
-[build]: https://travis-ci.org/mukeshsoni/react-telephone-input
-[npm-badge]: https://img.shields.io/npm/v/react-telephone-input.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-telephone-input
+[build-badge]: https://travis-ci.org/RafaelGomides/react-international-telephone-input.svg?branch=master
+[build]: https://travis-ci.org/RafaelGomides/react-international-telephone-input
+[npm-badge]: https://img.shields.io/npm/v/react-international-telephone-input.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-international-telephone-input
