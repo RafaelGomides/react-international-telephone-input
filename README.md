@@ -66,7 +66,7 @@ If you don't want all countries to be shown in the dropdown list, you can pass a
 
 E.g.
 
-```
+```js
 <ReactTelInput
     defaultCountry='us'
     value={value}
@@ -86,7 +86,7 @@ Preferred countries show up at the top of the list. This prop also accepts an ar
 
 E.g.
 
-```
+```js
 <ReactTelephoneInput
   preferredCountries={['in', 'us', 'gb']}
   />
@@ -143,7 +143,7 @@ Default value - 'tel'
 
 Object. Style applied to the dropdown list container. There is a default value for it
 
-```
+```js
 listStyle = {
   zIndex: 20,
   backgroundColor: 'white'
@@ -199,7 +199,7 @@ The default value for `flagsImagePath` is 'flags.png'
 
 You can try the app by downloading everything and running the commands given below -
 
-```
+```shell
 $ npm install
 $ npm start
 
