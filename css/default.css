@@ -781,6 +781,9 @@
   height: 26px;
   padding: 0 0 0 8px;
   border-radius: 3px 0 0 3px;
+  border: none;
+  background-color: transparent;
+  outline: 0;
 }
 .react-tel-input .selected-flag .flag {
   position: absolute;

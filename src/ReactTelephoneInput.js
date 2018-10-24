@@ -578,7 +578,7 @@ export class ReactTelephoneInput extends Component {
           // this is crucial if we want keyboard up/down events to be heard through this div and not document.body
           tabIndex={0}
         >
-          <div
+          <button
             onClick={this.handleFlagDropdownClick}
             className="selected-flag"
             title={`${this.state.selectedCountry.name}: + ${this.state.selectedCountry.dialCode}`}
@@ -593,7 +593,7 @@ export class ReactTelephoneInput extends Component {
             >
               <div className={arrowClasses} data-test-id="src_reacttelephoneinput_test_id_9" />
             </div>
-          </div>
+          </button>
           {this.state.showDropDown ? this.getCountryDropDownList() : ''}
         </div>
         <input
